@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical"
+    android:background="@color/teal_200">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="IFSC Code Validator"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:textStyle="bold"
+        android:id="@+id/idedtIfscCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter IFSC code"
+        android:textSize="30dp"
+        android:importantForAutofill="no"
+        android:inputType="textCapCharacters"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAllCaps="true" />
+
+    <Button
+        android:textColor="@color/teal_200"
+        android:backgroundTint="@color/white"
+        android:id="@+id/idBtnGetBankDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Get Bank Details"
+        android:textAllCaps="false" />
+
+
+    <TextView
+        android:id="@+id/idTVBankDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_500"
+        android:textSize="15sp" />
+
+</LinearLayout>
